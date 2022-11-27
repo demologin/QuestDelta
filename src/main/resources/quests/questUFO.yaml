@@ -1,0 +1,90 @@
+---
+id: 1000
+name: "НЛО"
+description: "Простой квест"
+duration: 1
+authorID: 1
+firstQuestionID: 1100
+questions:
+- id: 1100
+  questID: 1000
+  questionText: "Ты потерял память.\nПринять вызов НЛО?"
+  answers:
+  - id: 1102
+    questionID: 1100
+    nextQuestionID: 1200
+    answerText: "Принять вызов"
+  - id: 1101
+    questionID: 1100
+    nextQuestionID: 1300
+    answerText: "Отклонить вызов"
+  image: "ufoCall"
+  last: false
+  win: false
+  first: true
+- id: 1200
+  questID: 1000
+  questionText: "Ты принял вызов.\nПоднимаешься на мостик к капитану?"
+  answers:
+  - id: 1201
+    questionID: 1200
+    nextQuestionID: 1400
+    answerText: "Подняться на мостик"
+  - id: 1202
+    questionID: 1200
+    nextQuestionID: 1500
+    answerText: "Отказаться подняться на мостик."
+  image: "spaceShip"
+  last: false
+  win: false
+  first: false
+- id: 1300
+  questID: 1000
+  questionText: "Ты отклонил вызов.\nПоражение."
+  answers: null
+  image: "spaceShipExploded"
+  last: true
+  win: false
+  first: false
+- id: 1400
+  questID: 1000
+  questionText: "Ты поднялся на мостик.\nТы кто?"
+  answers:
+  - id: 1401
+    questionID: 1400
+    nextQuestionID: 1600
+    answerText: "Рассказать правду о себе"
+  - id: 1402
+    questionID: 1400
+    nextQuestionID: 1700
+    answerText: "Солгать о себе"
+  image: "whoAreYou"
+  last: false
+  win: false
+  first: false
+- id: 1500
+  questID: 1000
+  questionText: "Ты не пошел на переговоры.\nПоражение."
+  answers: null
+  image: "spaceShipExploded"
+  last: true
+  win: false
+  first: false
+- id: 1600
+  questID: 1000
+  questionText: "Тебя вернули домой.\nПобеда."
+  answers: null
+  image: "comeBack"
+  last: true
+  win: true
+  first: false
+- id: 1700
+  questID: 1000
+  questionText: "Твою ложь разоблачили.\nПоражение."
+  answers: null
+  image: "kaput"
+  last: true
+  win: false
+  first: false
+image: "quest"
+active: true

@@ -1,0 +1,258 @@
+---
+id: 1000
+name: "Именинный пирог"
+description: "История о том, как Финдус и Петсон решили испечь именинный пирог"
+duration: 5
+authorID: 1
+firstQuestionID: 1100
+questions:
+- id: 1100
+  questID: 1000
+  questionText: "Финдус, как ты уже наверное знаешь, очень любит праздновать свой день рождения, ведь у него их целых 3 в году. Вот и на этот раз он решил, что пора бы это отметить и приготовить его любимый именнинный пирог. Они с Петсоном собрали почти все ингридиенты: яйца, масло, сметану, но кое-что забыли - что же это?"
+  answers:
+  - id: 1102
+    questionID: 1100
+    nextQuestionID: 1200
+    answerText: "Колбаса"
+  - id: 1101
+    questionID: 1100
+    nextQuestionID: 1300
+    answerText: "Скалка"
+  - id: 1101
+    questionID: 1100
+    nextQuestionID: 1400
+    answerText: "Мука"
+  - id: 1101
+    questionID: 1100
+    nextQuestionID: 1500
+    answerText: "Клей"
+  image: "Findus_0"
+  last: false
+  win: false
+  first: true
+- id: 1200
+  questID: 1000
+  questionText: "Финдус конечно любит колбасу, но увы это им не поможет."
+  answers: null
+  image: "Findus_lost_1"
+  last: true
+  win: false
+  first: false
+- id: 1300
+  questID: 1000
+  questionText: "Скалка очень полезная в хозяйстве вещь, но для блинов врядли сгодится."
+  answers: null
+  image: "Findus_lost_0"
+  last: true
+  win: false
+  first: false
+- id: 1400
+  questID: 1000
+  questionText: "Все верно, только муки им и не хватало. Но вот незадача ее нигде нет, они даже под диваном смотрели. Придется ехать в магазин. На чем бы туда отправится?"
+  answers:
+  - id: 1401
+    questionID: 1400
+    nextQuestionID: 1600
+    answerText: "На велосипеде"
+  - id: 1402
+    questionID: 1400
+    nextQuestionID: 1700
+    answerText: "На самолете"
+  - id: 1403
+    questionID: 1400
+    nextQuestionID: 1800
+    answerText: "На самокате"
+  - id: 1404
+    questionID: 1400
+    nextQuestionID: 1900
+    answerText: "На лодке"
+  image: "Findus_1"
+  last: false
+  win: false
+  first: false
+- id: 1500
+  questID: 1000
+  questionText: "С клеем шутки плохи!"
+  answers: null
+  image: "Findus_lost_3"
+  last: true
+  win: false
+  first: false
+- id: 1700
+  questID: 1000
+  questionText: "Не так уж далеко находится магазин, да и до аэропорта еще дальше"
+  answers: null
+  image: "Findus_lost_6"
+  last: true
+  win: false
+  first: false
+- id: 1800
+  questID: 1000
+  questionText: "Петсон слишком стар, да и по грантовой дороге это будет сделать не легко"
+  answers: null
+  image: "Findus_lost_4"
+  last: true
+  win: false
+  first: false
+- id: 1900
+  questID: 1000
+  questionText: "Магазин мог бы находится на острове, но увы это не так"
+  answers: null
+  image: "Findus_lost_5"
+  last: true
+  win: false
+  first: false
+- id: 1600
+  questID: 1000
+  questionText: "Верно, ведь у Петсона есть велосипед. Но что за напасть, у него спустило колесо. Может это Финдус прогрыз шину? Но он в жизни не грыз никаких шин..."
+  answers:
+    - id: 1601
+      questionID: 1600
+      nextQuestionID: 11100
+      answerText: "Разозлиться и отругать Финдуса"
+    - id: 1602
+      questionID: 1600
+      nextQuestionID: 11200
+      answerText: "Поехать на спущенном колесе"
+    - id: 1603
+      questionID: 1600
+      nextQuestionID: 11400
+      answerText: "Поставить заплатку"
+    - id: 1604
+      questionID: 11300
+      nextQuestionID: 1500
+      answerText: "Оставить затею с пирогом"
+  image: "Findus_2"
+  last: false
+  win: false
+  first: false
+- id: 11100
+  questID: 1000
+  questionText: "Петсон очень не любит сердиться, и особенно, кого-нибудь ругать"
+  answers: null
+  image: "Findus_lost_7"
+  last: true
+  win: false
+  first: false
+- id: 11200
+  questID: 1000
+  questionText: "Далеко на таких колесах точно не уедешь..."
+  answers: null
+  image: "Findus_lost_8"
+  last: true
+  win: false
+  first: false
+- id: 11300
+  questID: 1000
+  questionText: "Петсон не сможет так поступить, ведь тогда Финдус очень расстроится не съев пирог в свой день рождения"
+  answers: null
+  image: "Findus_lost_9"
+  last: true
+  win: false
+  first: false
+- id: 11400
+  questID: 1000
+  questionText: "Отлично! Заплатка вроде бы лежала в сарае, но он оказался заперт, а ключа нигде нет. Хм... странно, ведь Петсон никогда не запирал сарай. Финдус нашел ключ, но тот почему-то лежал на дне колодца. Чем бы им его оттуда достать, вот бы было какое-нибудь подходящее приспособление?"
+  answers:
+  - id: 11401
+    questionID: 11400
+    nextQuestionID: 11500
+    answerText: "Нырнуть в колодец"
+  - id: 11402
+    questionID: 11400
+    nextQuestionID: 11800
+    answerText: "Удочкой"
+  - id: 11402
+    questionID: 11400
+    nextQuestionID: 11600
+    answerText: "Длинной палкой"
+  - id: 11402
+    questionID: 11400
+    nextQuestionID: 11700
+    answerText: "Сачком"
+  image: "Findus_3"
+  last: false
+  win: false
+  first: false
+- id: 11500
+  questID: 1000
+  questionText: "Плохая идея, ведь коты не любят воду, а Петсон попросту разобьется и утонет"
+  answers: null
+  image: "Findus_lost_10"
+  last: true
+  win: false
+  first: false
+- id: 11600
+  questID: 1000
+  questionText: "На первый взгляд идея кажется верной, но обычной палкой ключ со дна не подцепишь, увы..."
+  answers: null
+  image: "Findus_lost_11"
+  last: true
+  win: false
+  first: false
+- id: 11700
+  questID: 1000
+  questionText: "Сачок? Ну может для бабочек он и сгодится, но ни как не для ловли ключа в колодце"
+  answers: null
+  image: "Findus_lost_12"
+  last: true
+  win: false
+  first: false
+- id: 11800
+  questID: 1000
+  questionText: "У Петсона как раз завалялась удочка на чердаке. Надо только взять лестницу и достать ее. Но на лестнице спит бык Густавсона и если он проснется он рассвирипеет. Как же быть?"
+  answers:
+    - id: 11801
+      questionID: 11800
+      nextQuestionID: 12000
+      answerText: "Разбудить его песней и отвлечь боем быков"
+    - id: 11802
+      questionID: 11800
+      nextQuestionID: 11900
+      answerText: "Отнять и убежать"
+    - id: 11802
+      questionID: 11800
+      nextQuestionID: 12100
+      answerText: "Отправить за удочкой Финдуса"
+    - id: 11802
+      questionID: 11800
+      nextQuestionID: 12200
+      answerText: "Подождать пока бык сам проснется и уйдет"
+  image: "Findus_4"
+  last: false
+  win: false
+  first: false
+- id: 11900
+  questID: 1000
+  questionText: "Очень плохая идея, наверное ты никогда не видел разъяренного быка"
+  answers: null
+  image: "Findus_lost_13"
+  last: true
+  win: false
+  first: false
+- id: 12000
+  questID: 1000
+  questionText: "Ура! Теперь Петсон возьмет лестницу, достанет с чердака удочку, выловит из колодца ключ, откроет сарай, возьмет заплатку и инструменты, починит шину и отправится в магазин за мукой, а затем приготовит пирог. А вечером они с Финдусом сядут в саду и будут пить кофе с пирогом, слушая пластинку с прекрасными венскими вальсами"
+  answers: null
+  image: "Findus_6"
+  last: true
+  win: true
+  first: false
+- id: 12100
+  questID: 1000
+  questionText: "Финдус конечно ловко взобрался бы на чердак, только удочка слишком тяжелая для него и он с ней не справится"
+  answers: null
+  image: "Findus_lost_14"
+  last: true
+  win: false
+  first: false
+- id: 12200
+  questID: 1000
+  questionText: "Отличная мысль, но только бык любит спать очень долго, а Финдус ужасно нетерпеливый и умрет со скуки не дождавшись своего пирога"
+  answers: null
+  image: "Findus_lost_15"
+  last: true
+  win: false
+  first: false
+image: "Findus"
+active: true

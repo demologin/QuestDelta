@@ -1,0 +1,1177 @@
+/* Common Style */
+html, body {
+    height:100%;
+    min-height:100%;
+}
+body {
+    font-family: "Roboto", serif;
+    background: #282C34;
+}
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.app-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.app-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.app-body {
+    min-height: 100%;
+    padding: 110px 0 120px;
+    display: flex;
+    flex-direction: column;
+}
+.lex-container {
+    padding: 0 50px;
+    background: black;
+}
+.lex-content-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    z-index: 3;}
+.lex-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+/* Header */
+.lex-header {
+    height: 110px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.lex-logo-wrap{
+    display: flex;
+    align-items: center;
+}
+.lex-logo-img {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+.lex-logo-text {
+    margin-right: 10px;
+    color: wheat;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 2.2em;
+    text-transform: uppercase;
+}
+.lex-header-nav {
+    display: flex;
+    align-items: center;
+}
+.lex-nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.lex-nav-item {
+    margin: 0 15px;
+    font-family: "Montserrat SemiBold", serif;
+    font-size: 1.4em;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.lex-nav-item:hover {
+    opacity: 0.7;
+}
+.lex-nav-item a {
+    color: whitesmoke;
+}
+
+.lex-auth {
+    display: flex;
+    align-items: center;
+}
+.lex-head-profile {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    font-family: Roboto, serif;
+    font-size: 1.5em;
+    outline: none;
+}
+
+/* Footer */
+.lex-footer{
+    min-height: 120px;
+    padding: 20px 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.lex-footer-nav{
+    display: flex;
+    align-items: center;
+}
+.nav-item-footer{
+    margin: 0 25px;
+    font-family: "Montserrat SemiBold", serif;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.nav-item-footer:hover {
+    opacity: 1;
+}
+.nav-item-footer a{
+    color: whitesmoke;
+}
+.text-center{
+    text-align:center!important
+}
+.text-muted {
+    --bs-text-opacity:1;
+    color: #808b94 !important
+}
+/* Profile */
+.lex-profile-intro {
+    color: whitesmoke;
+}
+.lex-profile-intro h1 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: auto; top: auto; /* Положение подсказки */
+    color: #b2b2b2; /* Цвет текста */
+    font-size: 0.5em;
+    padding: 0.5em 1em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+}
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: auto; /* Положение подсказки */
+}
+
+.lex-intro-description {
+    margin: 5px 0;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.lex-profile-forms-wrap {
+    display: flex;
+    justify-content: center;
+}
+.lex-profile-image-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px 80px;
+}
+.edit-user-image-wrap {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.lex-profile-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.lex-profile-image {
+    margin: 5px auto;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+.lex-profile-image-invert {
+    margin: 5px auto;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.edit-user-image-btn {
+    background: none;
+    color: #c3c0c0;
+    font-size: 1.5em;
+    padding: 5px;
+    border: none;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.edit-user-image-btn:hover {
+    color: #808b94;
+}
+.edit-user-image-btn:active {
+    color: #2f889a;
+    transform: scale(0.8);
+}
+.lex-image-btn-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.lex-image-input {
+    display: block;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: darkgray;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    appearance: none;
+    border-radius: 0.375rem 0 0 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.lex-image-upload-btn {
+    display: inline-block;
+    padding: 6px;
+    color: whitesmoke;
+    font-size: 1.2em;
+    background: #2f889a;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+.lex-profile-form {
+    display: flex;
+    justify-content: center;
+    /*width: 60%;*/
+    margin: 10px 80px;
+}
+.edit-user-wrap {
+    position: relative;
+}
+.edit-user-btn {
+    margin-left: 10px;
+    background: none;
+    color: #c3c0c0;
+    font-size: 1.5em;
+    padding: 3px;
+    border: none;
+    transition: 0.3s ease;
+}
+.edit-user-btn:hover {
+    color: #808b94;
+}
+.edit-user-btn:active {
+    color: #2f889a;
+    transform: scale(0.8);
+}
+.lex-details {
+    display: flex;
+    margin-right: 10px;
+    height: 300px;
+    flex-direction: column;
+}
+.lex-details-edit-wrap {
+    display: flex;
+}
+.lex-details-edit-wrap h4 {
+    margin: 10px 0;
+    color: #d2d8d8;
+    font-size: 2em;
+}
+.lex-table-details{
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+.lex-table-details td{
+    padding: 10px 10px 10px 0;
+}
+.lex-pswd-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.lex-pass-inputs-wrap {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.lex-pass-inputs-wrap label {
+    margin-right: 10px;
+}
+.lex-change-pass-btn {
+    color: white;
+    font-size: 1.2em;
+    background: #2f889a;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+.lex-change-pass-btn:active {
+    transform: scale(0.8);
+}
+.lex-change-pass-wrap {
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.lex-confirm-btn-wrap {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+.lex-save-cancel-btn {
+    color: white;
+    font-size: 1.2em;
+    background: #b6384a;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+.lex-save-cancel-btn:active {
+    transform: scale(0.8);
+}
+#save-edit-btn {
+    background: #2f889a;
+}
+
+.lex-remove-account {
+    margin:0 70px 70px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.lex-remove-account-btn {
+    color: white;
+    font-size: 1.2em;
+    background: #000000;
+    padding: 8px;
+    border: 1px solid rgba(217, 39, 39, 0.6);
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+.lex-remove-account-btn:active {
+    transform: scale(0.8);
+}
+
+/* Game */
+.question-form-wrapper {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.question-image-wrap {
+    margin: 0 30px;
+    height: 400px;
+    width: 600px;
+}
+.exmpl {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exmpl img {
+    height: 100%;
+    width: auto;
+}
+.exmpl1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exmpl1 img {
+    height: auto;
+    width: 100%;
+}
+.lex-question {
+    height: 250px;
+    overflow: auto;
+    color: wheat;
+    font-size: 1.7em;
+}
+.question-body {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.answerForm {
+    margin-top: auto;
+}
+.answers-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.submit-answer-wrap {
+    position: absolute;
+    bottom:-70px;
+    right: 0;
+}
+.form-check {
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.form-check input[type=radio]{
+    display: none;
+}
+.form-check label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 34px;
+    user-select: none;
+}
+.form-check input[type=radio]:checked + label {
+    border: 1px solid #999;
+    border-radius: 6px;
+    background: darkslategray;
+}
+.form-check label:hover {
+    color: #818080;
+}
+.submit-answer{
+    color: white;
+    font-size: 1.5em;
+    background: #2f889a;
+    padding: .6em 1em;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50em;
+    transition: all .3s ease;
+    /*border: none;*/
+}
+.submit-answer:disabled{
+    color: gray;
+    background: #235660;
+    /*border: none;*/
+}
+.submit-answer:not([disabled]):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+.submit-answer:not([disabled]):active {
+    transform: translateY(4px);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Homepage*/
+.lex-home {
+    /*min-height: calc(100vh - 120px);*/
+    background: url("../images/home-background.jpg")  center center/cover no-repeat;
+}
+.lex-h-home {
+    z-index: 10;
+    font-family: "Roboto Slab", serif;
+    height: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    width: auto;
+    min-height: 0;
+    min-width: 0;
+    max-height: none;
+    max-width: none;
+    text-align: center;
+    line-height: 110px;
+    letter-spacing: -15px;
+    font-weight: 700;
+    font-size: 120px;
+    text-shadow: #494949 3px 0 15px;
+    backdrop-filter: none;
+    filter: blur(0);
+    transform-origin: 50% 50%;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.lex-splitted-lines {
+    display: block;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+.lex-splitted-words {
+    position:relative;
+    display:inline-block;
+}
+.lex-char-home {
+    position: relative;
+    display: inline-block;
+    backdrop-filter: none;
+    filter: blur(0px);
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    color: #ffffff;
+}
+
+/* Quests */
+.lex-bulb-bg {
+    position: absolute;
+    left: 0;
+    background: url(../images/bulb_background.jpg) no-repeat center center;
+    background-size: 100%;
+    right: 0;
+    top: 110px;
+    bottom: 120px;
+    z-index: 2;
+}
+.bulb1{
+    background:url(../images/bulb-1.png) no-repeat center center;
+    background-size:contain;
+    position:absolute;
+    width:272px;
+    height:412px;
+    left:42%;
+    top:0;
+    z-index: 3;
+    animation: pendulum1 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    -webkit-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    transform-origin:center top;
+}
+
+.bulb2{
+    background:url(../images/bulb-2.1.png) no-repeat center center;
+    background-size:contain;
+    position:absolute;
+    width:144px;
+    height:418px;
+    left:31%;
+    top:14%;
+    z-index: 2;
+    animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    -webkit-animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    transform-origin:center top;
+}
+.bulb3{
+    background:url(../images/bulb-3.png) no-repeat center center;
+    background-size:contain;
+    position:absolute;
+    width:72px;
+    height:309px;
+    left:25%;
+    top:35%;
+    z-index: 1;
+    animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    -webkit-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+    transform-origin:center top;
+}
+
+.bulb1:hover{
+
+}
+.bulb2:hover{
+
+}
+.bulb3:hover{
+
+}
+/* Keyframes */
+@-webkit-keyframes
+pendulum {
+    0%, 100% { transform: rotate(2deg); }
+    25%, 75% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+}
+@-webkit-keyframes
+pendulum1 {
+    0%, 100% { transform: rotate(.6deg); }
+    25%, 75% { transform: rotate(-1.2deg); }
+    50% { transform: rotate(1.2deg); }
+}
+@keyframes pendulum {
+    0%, 100% { transform: rotate(2deg); }
+    25%, 75% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+}
+
+.lex-col {
+    max-width: 1700px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
+}
+.lex-card {
+    width: 800px;
+    min-height: 340px;
+    display: flex;
+    padding: 20px;
+}
+.lex-card:nth-child(even) {
+    margin-left: auto;
+    text-align: right;
+}
+.lex-card:nth-child(even) .lex-card-body {
+    order: -1;
+}
+.lex-card:nth-child(even) .card-title {
+    margin-left: auto;
+    margin-right: -70px;
+}
+.lex-card:nth-child(even) .lex-quest-icons {
+    margin-left: auto;
+    text-align: right;
+    justify-content: right;
+}
+.lex-quest-image-wrap {
+    width: 55%;
+    min-width: 418px;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0 0 0);
+    background: #000;
+}
+.lex-quest-image {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+.lex-quest-image:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.lex-card-body {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+.card-main{
+    padding: 0 20px 0 20px;
+}
+.card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-left: -70px;
+    color: #fff;
+    display: block;
+    overflow-wrap: anywhere;
+}
+.lex-quest-icons{
+    display: flex;
+    color:lightgoldenrodyellow;
+    opacity: 0.7;
+    font-size: .9em;
+    justify-content: left;
+}
+.lex-question-icon {
+    margin-right: 10px;
+}
+.lex-duration-icon {
+    margin-left: 10px;
+}
+.card-text {
+    color: #fff;
+}
+.lex-quest-play::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+    background-color: #f3c501;
+}
+
+.lex-quest-play {
+    margin-left: -60px;
+    color: wheat;
+    font-size: 2em;
+    position: absolute;
+    bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.lex-quest-play:hover {
+    transform: scale(1.1);
+}
+/*Users*/
+
+td > img {
+    height: 3em;
+    width: auto;
+}
+.action-buttons-wrap > button {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 1em;
+    padding: .6em 1em;
+}
+.save-user-btn{
+    background: #2f889a;
+}
+.delete-user-btn {
+    background: #b6384a;
+}
+
+.action-buttons-wrap > button:hover {
+
+}
+
+
+/*Modal login form*/
+
+input, textarea {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+input::-ms-clear, textarea::-ms-clear {
+    display: none;
+}
+
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+.lex-main-nav {
+    float: right;
+    margin-right: 0;
+    width: 44px;
+    height: 100%;
+    background: url("../images/cd-icon-menu.svg") no-repeat center center;
+    cursor: pointer;
+}
+.lex-main-nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transform: translateY(-100%);
+}
+.lex-main-nav ul.is-visible {
+    transform: translateY(50px);
+}
+.lex-main-nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5%;
+    background: #292a34;
+    color: #FFF;
+}
+@media only screen and (min-width: 768px) {
+    .lex-main-nav {
+        width: auto;
+        height: auto;
+        background: none;
+        cursor: auto;
+    }
+    .lex-main-nav ul {
+        position: relative;
+        width: auto;
+        transform: translateY(0);
+    }
+    .lex-main-nav ul.is-visible {
+        transform: translateY(0);
+    }
+    .lex-main-nav li {
+        display: inline-block;
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    .lex-main-nav li:nth-last-child(2) {
+        margin-left: 2em;
+    }
+    .lex-main-nav a {
+        display: inline-block;
+        height: auto;
+        line-height: normal;
+        background: transparent;
+    }
+    .lex-main-nav a.cd-signin, .lex-main-nav a.cd-signup, .lex-main-nav a.cd-quit  {
+        padding: .6em 1em;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50em;
+    }
+    .lex-main-nav a.cd-signup, .lex-main-nav a.cd-quit {
+        background: #2f889a;
+        border: none;
+    }
+}
+
+/* --------------------------------
+
+xsigin/signup popup
+
+-------------------------------- */
+.cd-user-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 54, 66, 0.9);
+    z-index: 1000000;
+    overflow-y: auto;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.cd-user-modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-user-modal.is-visible .cd-user-modal-container {
+    transform: translateY(0);
+}
+
+.cd-user-modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: #FFF;
+    margin: 3em auto 4em;
+    cursor: auto;
+    border-radius: 0.25em;
+    transform: translateY(-30px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+.cd-user-modal-container .cd-switcher:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cd-user-modal-container .cd-switcher li {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.cd-user-modal-container .cd-switcher li:first-child a {
+    border-radius: .25em 0 0 0;
+}
+.cd-user-modal-container .cd-switcher li:last-child a {
+    border-radius: 0 .25em 0 0;
+}
+.cd-user-modal-container .cd-switcher a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #d2d8d8;
+    color: #809191;
+}
+.cd-user-modal-container .cd-switcher a.selected {
+    background: #FFF;
+    color: #505260;
+}
+@media only screen and (min-width: 600px) {
+    .cd-user-modal-container {
+        margin: 4em auto;
+    }
+    .cd-user-modal-container .cd-switcher a {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+.cd-form {
+    padding: 1.4em;
+}
+.cd-form .fieldset {
+    position: relative;
+    margin: 1.4em 0;
+}
+.cd-form .fieldset:first-child {
+    margin-top: 0;
+}
+.cd-form .fieldset:last-child {
+    margin-bottom: 0;
+}
+.cd-form label {
+    font-size: 0.875rem;
+}
+.cd-form label.image-replace {
+    /* replace text with an icon */
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+    text-shadow: none;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.cd-form label.cd-username {
+    background-image: url("../images/cd-icon-username.svg");
+}
+.cd-form label.cd-login-input {
+    background-image: url("../images/cd-icon-email.svg");
+}
+.cd-form label.cd-password {
+    background-image: url("../images/cd-icon-password.svg");
+}
+.cd-form input {
+    margin: 0;
+    padding: 0;
+    border-radius: 0.25em;
+}
+.cd-form input.full-width {
+    width: 100%;
+}
+.cd-form input.has-padding {
+    padding: 12px 20px 12px 50px;
+}
+.cd-form input.has-border {
+    border: 1px solid #d2d8d8;
+    appearance: none;
+}
+.cd-form input.has-border:focus {
+    border-color: #343642;
+    box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+    outline: none;
+}
+.cd-form input.has-error {
+    border: 1px solid #d76666;
+}
+.cd-form input[type=password] {
+    /* space left for the HIDE button */
+    padding-right: 65px;
+}
+.cd-form input[type=submit] {
+    padding: 16px 0;
+    cursor: pointer;
+    background: #2f889a;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    appearance: none;
+}
+.no-touch .cd-form input[type=submit]:hover, .no-touch .cd-form input[type=submit]:focus {
+    background: #3599ae;
+    outline: none;
+}
+.cd-form .hide-password {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 6px 15px;
+    border-left: 1px solid #d2d8d8;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    color: #343642;
+}
+.cd-form .cd-error-message {
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    bottom: -35px;
+    background: rgba(215, 102, 102, 0.9);
+    padding: .8em;
+    z-index: 1000;
+    color: #FFF;
+    font-size: 0.8125rem;
+    border-radius: 0.25em;
+    /* prevent click and touch events */
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s 0, visibility 0 0.2s;
+}
+.cd-form .cd-error-message::after {
+    /* triangle */
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: 100%;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(215, 102, 102, 0.9);
+}
+.cd-form .cd-error-message.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s 0, visibility 0 0;
+}
+
+.cd-form-message {
+    padding: 1.4em 1.4em 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.cd-form-bottom-message {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+.cd-form-bottom-message a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.cd-close-form {
+    /* form X button on top right */
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: -40px;
+    background: url("../images/cd-icon-close.svg") no-repeat center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@media only screen and (min-width: 1170px) {
+    .cd-close-form {
+        display: none;
+    }
+}
+
+#cd-login, #cd-signup, #cd-reset-password {
+    display: none;
+}
+
+#cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
+    display: block;
+}
+
+.is-hide{
+    display: none;
+}
+.bi{
+    width:1rem;
+    height:1rem;
+}
+
+/* Stub */
+#world {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(#e4e0ba, #f7d9aa);
+}
+
+/* Statistic */
+
+.table {
+    color: #fff;
+    width: 100%;
+    font-size: 1.2em;
+    border-collapse: collapse;
+    text-align: center;
+}
+.is-sticky{
+    position: sticky;
+    top: 0;
+}
+
+.table thead tr,
+.table tbody tr {
+    background: #212429;
+    border-bottom: 1px #484747 solid;
+}
+.table tbody tr:nth-child(odd) {
+    background: #2C2F34;
+}
+
+.table tbody tr:last-child {
+    border-bottom-color: transparent;
+}
+
+.table td {
+    padding: 12px 15px;
+}
+
+.table th {
+    padding: 15px 20px;
+}
+
+/* Scrollbar Works on Firefox */
+* {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+}
+
+*:hover {
+    scrollbar-color: rgba(0, 0, 0, 0.8) transparent
+}
+
+/* Scrollbar Works on Chrome-based */
+*::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    border: 5px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb:vertical {
+    min-height: 50px;
+}
+
+*::-webkit-scrollbar-thumb:horizontal {
+    min-width: 50px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+}
